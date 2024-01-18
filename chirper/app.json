@@ -1,0 +1,16 @@
+{
+  "name": "Payment over the phone powered by Twilio",
+  "description": "Node.js implementation for payment over the phone using Twilio <Pay>.",
+  "website": "https://twilio.com",
+  "logo": "https://www.twilio.com/marketing/bundles/marketing/img/favicons/favicon_114.png",
+  "success_url": "/",
+  "addons": [],
+  "repository": "https://github.com/twilio-labs/sample-pay-service",
+  "keywords": ["nodejs", "twilio"],
+  "env": {
+    "TWILIO_AUTH_TOKEN": {
+      "description": "Your Twilio Auth Token. You can get it at twilio.com/console",
+      "value": ""
+    }
+  }
+}

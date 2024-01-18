@@ -1,0 +1,58 @@
+{
+  "name": "pay-service",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./app.js",
+  "scripts": {
+    "start": "node .",
+    "setup": "configure-env",
+    "test": "eslint . && cross-env NODE_ENV=test mocha test",
+    "format": "eslint . --fix",
+    "dev": "cross-env NODE_ENV=dev npx nodemon ."
+  },
+  "description": "Node.js implementation for payment over the phone using Twilio <Pay>",
+  "author": {
+    "name": "Twilio",
+    "email": "open-source@twilio.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twilio-labs/sample-pay-service"
+  },
+  "keywords": [
+    "node",
+    "twilio",
+    "express"
+  ],
+  "engines": {
+    "node": ">=8.x"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": ">=4.1.1",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "morgan": "^1.9.1",
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.5.0",
+    "twilio": "^3.39.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "configure-env": "^1.0.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "sinon": "^8.0.2",
+    "sinon-chai": "^3.4.0",
+    "supertest": "^4.0.2"
+  }
+}
